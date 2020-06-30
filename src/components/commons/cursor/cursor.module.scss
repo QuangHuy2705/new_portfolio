@@ -1,0 +1,12 @@
+.cursor {
+  position: absolute;
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+  border: solid 2px rgba(255, 255, 255, 0.856);
+  z-index: 20;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+  box-shadow: 5px 5px 10px 5px #00000044;
+  pointer-events: none;
+}

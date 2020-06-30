@@ -1,0 +1,19 @@
+#board {
+  /* transform: rotate(30deg); */
+  transform-origin: bottom left;
+}
+
+#leave1 {
+  animation: leavesMoving 5s linear infinite;
+  transform-origin: bottom left;
+}
+
+@keyframes leavesMoving {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

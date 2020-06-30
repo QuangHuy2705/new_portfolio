@@ -1,0 +1,160 @@
+@import "../../commons/sass/color";
+
+.front-page {
+  width: 100%;
+  height: 100%;
+
+  .brief-info {
+    background: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.349)),
+      url("../../commons/imgs/macau-photo-agency-4fbj3I7vJpM-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    overflow: visible;
+    padding-top: 35px;
+    opacity: 0.99;
+
+    .name {
+      .domain-name {
+        color: $primary-color;
+        font-size: 3rem;
+      }
+      color: #fff;
+      font-size: 2.4rem;
+    }
+
+    .hero-text {
+      margin-top: 70px;
+      h1 {
+        font-family: "Crimson Text";
+        font-size: 8rem;
+        color: #fff;
+        text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.42);
+        white-space: nowrap;
+        font-weight: 600 !important;
+      }
+
+      h4 {
+        margin-top: 10px;
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 500;
+        width: 70%;
+      }
+    }
+  }
+
+  .middle {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 70% 30%;
+    .coding-svg-container {
+      z-index: -1;
+      background: $background--2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .svg {
+        width: 65%;
+      }
+    }
+
+    .extra {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 50px;
+      p {
+        color: $text-color--1;
+        font-weight: 600;
+        font-size: 1.6rem;
+      }
+
+      .button {
+        display: block;
+        margin-top: 15px;
+        cursor: pointer;
+        background: $primary-color;
+        color: #fff;
+        font-size: 1.8rem;
+        padding: 13px 26px;
+        border: none;
+        border-radius: 8px;
+        transition: all 0.2s;
+        outline: none;
+
+        &:hover {
+          background: darken($primary-color, $amount: 5%);
+        }
+
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+
+  .nav {
+    height: 100%;
+    background: $background--1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+
+    .icon--menu {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      background-image: url("../../commons/icons/menu.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .navs {
+      list-style: none;
+      width: 100%;
+      /*I0*/
+      writing-mode: vertical-lr;
+      /* O8era/webkit*/
+      writing-mode: sideways-lr;
+      /*should be it */
+      display: flex;
+      align-items: flex-end;
+
+      .nav-item {
+        margin-top: 30px;
+        color: #fff;
+        width: 50%;
+        text-transform: uppercase;
+        padding: 8px 0;
+        font-size: 1.1rem;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.2s;
+
+        &--active {
+          background: $background--3;
+
+          &::after {
+            content: "";
+            background: $background--3;
+            position: absolute;
+            width: 10%;
+            height: 10%;
+            // left: -50%;
+            // top: 50%;
+            // transform: rotate(90deg);
+          }
+        }
+
+        &:hover {
+          background: $background--3;
+        }
+      }
+    }
+  }
+}
