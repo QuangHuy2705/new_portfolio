@@ -1,7 +1,7 @@
-#board {
-  /* transform: rotate(30deg); */
-  transform-origin: bottom left;
-}
+/* #board { */
+/* transform: rotate(30deg); */
+/* transform-origin: bottom left; */
+/* }
 
 #leave1 {
   animation: leavesMoving 5s linear infinite;
@@ -16,4 +16,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
